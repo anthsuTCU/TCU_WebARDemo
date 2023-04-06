@@ -41,6 +41,7 @@
 		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='menu1' src='targets/menu1.jpg'></imagetarget>
+		<imagetarget id='GlobalTC' src='targets/GlobalTC.jpg'></imagetarget>
 
     <div id="startWebcamDiv" class="ctaDiv">
         <p style="text-align: center; width:60vw">This augmented reality experience requires access to your device's camera</p>
@@ -73,9 +74,9 @@
                 
                 document.getElementById("startWebcamDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/GlobalTC.data.gz",
-                    frameworkUrl: "Build/GlobalTC.framework.js.gz",
-                    codeUrl: "Build/GlobalTC.wasm.gz",
+                    dataUrl: "Build/GlobalTC.data",
+                    frameworkUrl: "Build/GlobalTC.framework.js",
+                    codeUrl: "Build/GlobalTC.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "TCU",
                     productName: "GlobalTC",
